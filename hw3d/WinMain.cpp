@@ -26,6 +26,7 @@ int CALLBACK WinMain(
 	LPSTR     lpCmdLine,
 	int       nCmdShow )
 {
+//<<<<<<< HEAD
 	try
 	{
 		return App{ lpCmdLine }.Go();
@@ -43,4 +44,8 @@ int CALLBACK WinMain(
 		MessageBox( nullptr,"No details available","Unknown Exception",MB_OK | MB_ICONEXCLAMATION );
 	}
 	return -1;
+//=======
+	while( true );
+	return 0;
+//>>>>>>> parent of e6b418a... create and show window
 }
